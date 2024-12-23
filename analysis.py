@@ -37,7 +37,7 @@ def printavgall(d):
         x = x + (driverkey[d][i] * pts[i])
     
     
-    print(d + "'s average point score across every active season since 2018 is: "+ str(x) + " points")
+    print("\n"+d + "'s average point score across every active season since 2018 is: "+ str(x) + " points")
 
 def printavgplaces(d):
     print("roughly, the average times (percentage) that "+d+" has placed in the top 10 in every active season since 2018 is as follows:\n")
@@ -61,7 +61,7 @@ def main():
         printavgall(driver)
         printavgplaces(driver)
 
-        x = input("Would you like to search for another driver? Type 'N' if no, type anything else to continue: ")
+        x = input("\nwould you like to search for another driver? Type 'N' if no, type anything else to continue: ")
 
         if (x.upper() == 'N'):
             run = False
